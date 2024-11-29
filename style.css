@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Manrope", serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    transition: background-color 0.5s, color 0.5s; 
+
+}
+
+header {
+    padding: min(5vh, 4rem);
+    width: 100%;
+    background-color: #0a0c0d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0.21rem 0.5rem;
+
+}
+
+header h1 {
+    color: #f2f2f2;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 35px;
+}
+
+header img {
+    width: 4rem;
+    height: 5rem;
+}
+
+header ul {
+    display: flex;
+    gap: 5rem;
+}
+
+header li a {
+    align-items: center;
+    color: #f2f2f2;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+.section01 {
+    padding: min(20vh, 7rem);
+    width: 100%;
+
+}
+
+/*Estilização do container do carrossel*/
+.carousel-container {
+    overflow: hidden; /*Esconde partes das imagens que saem do container */
+    width: 100%; /*O container ocupa toda a largura da página */
+    max-width: 800px; /*largura máxima para limitar em telas maiores */
+    margin: auto; /*centraliza o container*/
+}
+
+/*Estilo da faixa de imagens*/
+.carousel-track {
+    display: flex; /*Coloca as imagens lado a lado em linha*/
+    transition: transform 0.8s ease; /*Animação suave para a transição*/
+}
+
+/* Cada item do carrossel*/
+.carousel-item {
+    flex: 0 0 100%; /* Cada item ocupa 100% da largura do container*/
+}
+
+img {
+    width: 100%; /* As imagens ocupam toda a largura do item*/
+    display: block; /* Garante que não haja espaçamento abaixo das imagens*/
+}
+
+
+.div-sessao1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-sessao1 h3 {
+    color: #213635;
+    font-size: 50px;
+    font-family: "ExtraLight 200";
+    font-weight: bolder;
+    text-align: center;
+    margin-right: 2rem;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.div-sessao1 p {
+    color: #213635;
+    font-size: 25px;
+    font-family: "ExtraLight 200";
+    font-weight: 600;
+    text-align: center;
+    margin-right: 2rem;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+#section02 {
+    padding: min(20vh, 7rem);
+    width: 100%;
+    height: auto;
+    background-color: #978f84;
+
+
+}
+
+.div-sessao2 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#section02 h2 {
+    color: #213635;
+    font-size: 45px;
+    font-family: "Medium 500";
+    font-weight: bolder;
+    text-align: center;  
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+#section02 p {
+    color: black;
+    font-size: 25px;
+    font-family: "ExtraLight 200";
+    font-weight: 900;
+    text-align: center;
+    margin: 25px;
+    flex-wrap: wrap;
+}
+
+.line1 {
+    width: 10%; 
+    margin: 50px auto;
+}
+
+
+.div-produt {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 15px;
+
+}
+
+
+.div-produt div {
+    width: 200px;
+    height: 280px;
+    background-color: rgb(82, 72, 72);
+    margin-right: 80px;
+    border-radius: 15px;
+
+
+}
+
+.div1 {
+    background-image: url(img/ring-5357465_1280.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.div1:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div2 {
+    background-image: url(img/brinco.jpeg);
+    background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.div2:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div3 {
+    background-image: url(img/relogio\ feminino.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div3:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div4 {
+    background-image: url(img/fashion-7544012_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div4:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div5 {
+    background-image: url(img/colar.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div5:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div6 {
+    background-image: url(img/aliancas-ouro-branco.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div6:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.section02 h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 30px;
+
+}
+
+.section03 {
+    padding: min(20vh, 7rem);
+    width: 100%;
+    background-image: url(img/anel\ prata.jpg);
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    
+}
+
+.div-sessao3 h2 {
+    color: #213635; 
+    font-size: 45px; 
+    font-family: "Regular 400"; 
+    font-weight: 900; 
+    text-align: center; 
+    margin-right: 15rem;
+    
+}
+
+.section03 .newsletter {
+    text-align: center; 
+    margin-right: 10rem;
+    
+}
+
+.newsletter label {
+    
+    color: #213635;  
+    font-size: 20px; 
+    font-weight: bold; 
+
+}
+
+
+.newsletter input {
+    padding: 10px; 
+    width: 200px; 
+    border-color: #72b1a4; 
+}
+
+
+.newsletter .enviar {
+    padding: 10px; 
+    width: 100px; 
+    border-color: #72b1a4; 
+    text-align: center;
+}
+
+
+
+
+
+
+footer {
+    padding: min(6vh, 4rem); 
+    background-color: #0a0c0d; 
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center; 
+    gap: 15px; 
+    width: 100%;
+    box-shadow: 0 0.21rem 0.5rem;
+
+}
+
+footer img {
+    width: 4rem;
+    height: 5rem;
+}
+
+footer div h3{
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: Light 300;
+    font-weight: 300;
+}
+
+footer div p {
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: Light 300;
+    font-weight: 200;
+}
+
+
+.div-sociais i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: antiquewhite;
+
+}
+
+footer ul {
+    display: flex;
+    gap: 30px;
+}
+
+.div-logo-footer img {
+    width: 6rem;
+    height: 5rem; 
+
+}
+
+
+.div-sociais i {
+    padding: 10px;
+    font-size: 20px; 
+    background-color: #f2f2f2; 
+
+}
+
+
+.div-sociais i:hover {
+    background-color: #213635; 
+    transition: 0.5s;
+}
+
+.div-list-footer a {
+    text-decoration: none;
+    color: #e2d5c1; 
+}
